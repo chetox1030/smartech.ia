@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>smartech.ia — Agentes y Automatizaciones IA</title>
+  <meta name="description" content="Smartech.ia: automatiza tu negocio con agentes de inteligencia artificial para atención, marketing y operaciones.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#ffffff;--text:#0a0a0a;--accent:#00c46a;--muted:#444;--radius:14px;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:var(--text);line-height:1.5}
+    header{display:flex;align-items:center;justify-content:space-between;padding:24px 48px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,0.05);position:sticky;top:0;z-index:99}
+    .brand{font-weight:800;font-size:22px;color:#000}
+    .brand span{color:var(--accent)}
+    nav a{text-decoration:none;color:#222;margin-left:24px;font-weight:600}
+    nav a.btn{background:var(--accent);color:#fff;padding:10px 18px;border-radius:10px}
+
+    /* Hero */
+    .hero{position:relative;height:90vh;width:100vw;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;
+      background:url('robot.png') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:left;color:#fff}
+    .hero::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.45)}
+    .hero-content{position:relative;z-index:1;max-width:800px;padding:20px}
+    .hero h1{font-size:3rem;font-weight:800;line-height:1.2;color:#fff}
+    .hero h1 span{color:var(--accent)}
+    .hero p{font-size:1.2rem;margin-top:12px;margin-bottom:32px;color:#f1f1f1}
+    .hero .btn{background:var(--accent);color:#fff;padding:14px 24px;border-radius:10px;font-weight:700;text-decoration:none}
+
+    /* Acerca */
+    #acerca{max-width:1100px;margin:0 auto;padding:80px 24px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px}
+    #acerca img{width:100%;border-radius:14px;box-shadow:0 5px 18px rgba(0,0,0,0.1)}
+    #acerca h2{font-size:2rem;margin-bottom:20px;color:#0a0a0a}
+    #acerca p{margin-bottom:14px;color:#444;font-size:1rem}
+    #acerca a{display:inline-block;margin-top:12px;background:var(--accent);color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600}
+
+    /* Servicios */
+    section{max-width:1100px;margin:0 auto;padding:60px 24px}
+    h2{text-align:center;font-size:2rem;margin-bottom:32px;color:#0a0a0a}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+    .service{background:#f9f9f9;border-radius:14px;padding:24px;box-shadow:0 3px 8px rgba(0,0,0,0.05)}
+    .service h3{color:var(--accent);margin-bottom:10px}
+    .service p{color:#444;font-size:0.95rem}
+
+    /* Contacto */
+    .contact-container{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;background:#f9fafb;border-radius:14px;padding:40px;box-shadow:0 3px 8px rgba(0,0,0,0.05)}
+    .contact-left h3{margin-bottom:20px;font-size:1.3rem;color:#0a0a0a}
+    .contact-left input,.contact-left textarea{width:100%;padding:12px 14px;border:1px solid #ccc;border-radius:8px;margin-bottom:14px;font-size:1rem}
+    .contact-left button{background:var(--accent);color:#fff;border:none;padding:14px 22px;border-radius:8px;font-weight:700;cursor:pointer;width:100%}
+    .contact-right div{margin-bottom:16px;display:flex;align-items:center;gap:12px}
+    .contact-right i{background:var(--accent);color:#fff;padding:8px;border-radius:50%}
+    .contact-right strong{display:block;color:#0a0a0a}
+    .contact-right small{color:#444}
+    .ready-box{background:linear-gradient(135deg,#e6fef1,#f5fdfc);padding:20px;border-radius:10px;margin-top:16px}
+    .ready-box h4{margin-bottom:8px;color:#0a0a0a}
+
+    footer{background:#f1f1f1;text-align:center;padding:20px;color:#555;margin-top:40px;font-size:0.9rem}
+    @media(max-width:900px){
+      #acerca{grid-template-columns:1fr}
+      .contact-container{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">SMARTECH.<span>IA</span></div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#acerca">Acerca De</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#funciona">Cómo Funciona</a>
+      <a href="#contacto" class="btn">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h1>Eleva tu negocio con <span>agentes de IA</span></h1>
+      <p>Deja de perder tiempo e impulsa tu productividad hoy con automatizaciones inteligentes.</p>
+      <a href="#servicios" class="btn">Ver servicios</a>
+    </div>
+  </section>
+
+  <!-- Acerca de -->
+  <section id="acerca">
+    <div>
+      <h2>Transforma tu negocio hoy mismo</h2>
+      <p>En Smartech ayudamos a las empresas a optimizar su productividad mediante la <strong>automatización de procesos con inteligencia artificial</strong>. Nuestro objetivo es reducir tareas repetitivas, minimizar errores y liberar tiempo para que tu equipo se enfoque en lo que realmente importa: hacer crecer tu negocio.</p>
+      <p>Diseñamos soluciones a medida que integran IA en tus flujos de trabajo, mejorando la eficiencia operativa, acelerando la toma de decisiones y generando un impacto real en los resultados.</p>
+      <p>Conectamos innovación y simplicidad para que tu empresa dé el salto hacia el futuro digital.</p>
+      <a href="#contacto">Contáctanos</a>
+    </div>
+    <img src="oficinas.jpg" alt="Oficinas de Smartech IA">
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Atención automatizada</h3>
+        <p>Agentes de IA para WhatsApp y llamadas que responden preguntas, gestionan reservas y reducen carga operativa.</p>
+      </div>
+      <div class="service">
+        <h3>Agendado y recordatorios</h3>
+        <p>Integración con Google Calendar para agendar citas, enviar confirmaciones y recordatorios automáticos.</p>
+      </div>
+      <div class="service">
+        <h3>Marketing automatizado</h3>
+        <p>Flujos de captación y seguimiento de leads con IA que mejoran la conversión y personalización.</p>
+      </div>
+      <div class="service">
+        <h3>Chatbots con tus documentos</h3>
+        <p>Entrenamos bots con tus archivos en Google Drive para responder preguntas internas y de clientes.</p>
+      </div>
+      <div class="service">
+        <h3>Contabilidad inteligente</h3>
+        <p>Lectura y procesamiento automático de facturas y su envío al sistema contable.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p style="text-align:center;max-width:600px;margin:0 auto 24px">Estamos listos para transformar tu negocio</p>
+    <div class="contact-container">
+      <div class="contact-left">
+        <h3>Envíanos un mensaje</h3>
+        <form action="mailto:operacionessmartech.ia@gmail.com" method="post" enctype="text/plain">
+          <input type="text" name="nombre" placeholder="Nombre completo" required>
+          <input type="email" name="email" placeholder="Correo electrónico" required>
+          <input type="tel" name="telefono" placeholder="Teléfono">
+          <textarea name="mensaje" rows="4" placeholder="Tu mensaje"></textarea>
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+      <div class="contact-right">
+        <div><i>📧</i><div><strong>Email</strong><small>operacionessmartech.ia@gmail.com</small></div></div>
+        <div><i>📞</i><div><strong>Teléfono</strong><small>+34 628 842 992</small></div></div>
+        <div><i>📍</i><div><strong>Ubicación</strong><small>Madrid, España</small></div></div>
+        <div class="ready-box">
+          <h4>¿Listo para comenzar?</h4>
+          <p>Agenda una consulta gratuita y descubre cómo la IA puede transformar tu negocio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Smartech.ia — Automatizaciones con Inteligencia Artificial
+  </footer>
+</body>
+</html>
